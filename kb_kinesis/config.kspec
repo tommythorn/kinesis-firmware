@@ -75,14 +75,14 @@ KeyMap:Common
 
   /* Left Thumb */
   Key:LCT Map:Left_Control                               tl:"Ctrl"
-  Key:LAL Map:Left_Alt                                   tl:"Alt"
+  Key:LAL Map:Delete_Forward                             tl:"Delete"
   Key:BAK Map:Backspace                                  tl:"Backspace"
-  Key:DEL Map:Delete_Forward                             tl:"Delete"
+  Key:DEL Map:Left_Alt                                   tl:"Alt"
   Key:HOM Map:Home                                       tl:"Home"
   Key:END Map:End                                        tl:"End"
 
   /* Right Thumb */
-  Key:RAL Map:Right_Alt                                  tl:"Alt"
+  Key:RAL Map:Right_GUI                                  tl:"GUI"
   Key:RCT Map:Right_Control                              tl:"Ctrl"
   Key:PGU Map:PageUp                                     tl:"Pg Up"
   Key:PGD Map:PageDown                                   tl:"Pg Dn"
@@ -93,7 +93,7 @@ KeyMap:Common
   Key:TAB Map:Tab                                        tl:"Tab"
   Key:CAP Map:Caps_Lock                                  tl:"CapsLock"
   Key:LSH Map:Left_Shift                                 tl:"Shift"
-  Key:INS Map:Insert                                     tl:"Insert"
+  Key:INS Map:ESCAPE                                     tl:"esc"
   Key:LFT Map:LeftArrow                                  tl:"{left}"
   Key:RT  Map:RightArrow                                 tl:"{right}"
 
@@ -110,7 +110,7 @@ KeyMap:Common
   Key:XX  Map:Application                                tl:"{menu}"
   */
 
-KeyMap:US  base:Common default
+KeyMap:US  base:Common
 
   Key:BQ  Map:`_and_~                                    tl:"~"    bl:"`"
   Key:1   Map:1_and_!                                    tl:"!"    bl:"1"
@@ -161,7 +161,7 @@ KeyMap:US  base:Common default
   Key:SLA Map:/_and_?                                    tl:"?"    bl:"/"
   Key:BSL Map:\\_and_\|                                  tl:"|"    bl:"\\"
 
-KeyMap:DV  base:US
+KeyMap:DV  base:US default
 
   Key:Q    Map:squote_and_dquote                         tl:"\""   bl:"\'"
   Key:W    Map:,_and_\<                                  tl:"<"    bl:","
@@ -193,6 +193,9 @@ KeyMap:DV  base:US
   Key:COM  Map:w_and_W                                   tl:"W"
   Key:PER  Map:v_and_V                                   tl:"V"
   Key:SLA  Map:z_and_Z                                   tl:"Z"
+
+  Key:BSL  Map:/_and_?                                   tl:"?"    bl:"/"
+  Key:APO  Map:\\_and_\|                                 tl:"|"    bl:"\\"
 
 KeyMap:Fn
 
